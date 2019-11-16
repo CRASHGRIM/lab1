@@ -41,6 +41,16 @@ public:
         melodyLength = _melodyLength;
     }
 
+    void playNote(int note)
+    {
+      if (note == NOTE_SILENCE)
+          noTone(pin);
+      else 
+          tone(pin, notes[note]);
+      delay(1000);
+      noTone(pin);
+    }
+
     void playSound()
     {
         if (!isEnabled)
