@@ -10,7 +10,6 @@ int melodyLength = 4;
 void setup() {
 
     Serial.begin(115200);
-
 }
 
 void loop() {
